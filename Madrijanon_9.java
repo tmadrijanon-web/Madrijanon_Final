@@ -1,0 +1,29 @@
+
+/**
+ * Write a description of class Madrijanon_9 here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+import java.util.Scanner;
+
+public class Madrijanon_9
+{
+public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int sum = 0;
+        int number;
+
+        System.out.print("Enter a number (0 to stop): ");
+        number = sc.nextInt();
+
+        while (number != 0) {
+            sum += number;
+            System.out.print("Enter a number (0 to stop): ");
+            number = sc.nextInt();
+        }
+
+        System.out.println("The total sum is: " + sum);
+        sc.close();
+    }
+}
